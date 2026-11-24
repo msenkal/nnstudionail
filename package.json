@@ -1,0 +1,13 @@
+{
+  "name": "nn-nail-randevu",
+  "version": "1.0.0",
+  "description": "N&N Nail Studio online randevu sistemi",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "demo": "node --disable-warning=ExperimentalWarning demo-data.js",
+    "demo:temizle": "node --disable-warning=ExperimentalWarning demo-data.js --temizle"
+  }
+}

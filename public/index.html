@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7e9eb">
+  <title>N&amp;N Nail Studio · Online Randevu</title>
+  <meta name="description" content="N&N Nail Studio'dan manikür, kalıcı oje, protez tırnak ve nail art için online randevu alın.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="hero">
+      <h1 class="logo">N<span>&amp;</span>N Nail</h1>
+      <p class="tagline" id="tagline">&nbsp;</p>
+      <div class="hero-links">
+        <a id="lnk-phone" href="#">📞 Ara</a>
+        <a id="lnk-wa" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a id="lnk-map" href="#" target="_blank" rel="noopener">📍 Konum</a>
+        <button id="btn-manage" type="button">🗓️ Randevumu yönet</button>
+      </div>
+    </header>
+
+    <nav class="steps" id="steps" aria-label="Adımlar"></nav>
+    <main id="view"></main>
+  </div>
+
+  <div class="bar" id="bar">
+    <div class="bar-inner">
+      <div class="sum" id="bar-sum"></div>
+      <button class="btn" id="bar-next" type="button">Devam</button>
+    </div>
+  </div>
+
+  <dialog class="sheet" id="sheet">
+    <div class="sheet-head"><h3 id="sheet-title"></h3><button class="icon-btn" type="button" data-close aria-label="Kapat">✕</button></div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

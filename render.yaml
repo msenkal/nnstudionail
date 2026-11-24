@@ -1,0 +1,22 @@
+# Render.com Blueprint — N&N Nail demo sunucusu
+# Render panelinde: New → Blueprint → bu depoyu seçin. Ayarlar otomatik okunur.
+services:
+  - type: web
+    name: nn-nail-demo
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: echo "Kurulacak paket yok"
+    startCommand: npm start
+    healthCheckPath: /api/public/info
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: TZ
+        value: Europe/Istanbul
+      - key: DEMO_MODE        # demo şeridi, günlük sıfırlama, şifre değiştirme kapalı
+        value: "1"
+      - key: TRUST_PROXY      # Render'ın vekil sunucusu arkasında gerçek IP ve HTTPS bilgisini kullan
+        value: "1"
+      - key: ADMIN_PASSWORD   # demo admin şifresi (demo modunda giriş ekranında gösterilir)
+        value: nndemo
